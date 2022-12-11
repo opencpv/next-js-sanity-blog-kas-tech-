@@ -10,12 +10,12 @@ const NewsLetterSub = () => {
         <div className="flex flex-wrap gap-5 ">
           <input
             placeholder="Enter your email...."
-            type={"text"}
+            type={"email"}
             className={
-              "w-full md:w-[75%] py-3 text-lg px-3 rounded-md border-black/20 border-2 shadow-sm outline-none text-[#888888]"
+              "w-full h-10 md:w-[75%] py-3 text-sm px-3 rounded-md border-black/20 border-2 shadow-sm outline-none text-[#888888] font-poppins"
             }
           />
-          <button className="flex-auto bg-red-500 h-[56px] rounded-full font-black font-poppins text-white shadow-sm ">
+          <button className="flex-auto bg-red-500 h-10 rounded-full font-black font-poppins text-white shadow-sm ">
             Subscribe
           </button>
         </div>

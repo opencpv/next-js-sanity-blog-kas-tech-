@@ -5,6 +5,7 @@ import Container from "../layout/Container";
 import CustomImage from "../shared/Image";
 import CardTitleText from "../text/CardTitleText";
 import FlexLayout from "../layout/FlexLayout";
+import Link from "next/link";
 
 const ContainerCard = ({
   _id,
@@ -26,7 +27,7 @@ const ContainerCard = ({
   }, []);
   return (
     <Container>
-      <div>
+      <Link href={`/posts/${slug.current}`}>
         <div className="flex flex-wrap lg:flex-nowrap gap-8 items-center">
           <div className="flex flex-auto justify-center">
             <CustomImage
@@ -62,14 +63,16 @@ const ContainerCard = ({
                 roundedStyle={"rounded-full"}
               />
               <div className="font-poppins mt-2">
-                <p className="text-black font-semibold text-sm">{author.name}</p>
+                <p className="text-black font-semibold text-sm">
+                  {author.name}
+                </p>
                 <p className="text-[13px] text-[#888888] ">CEO and Founder</p>
               </div>
             </FlexLayout>
           </div>
         </div>
         <div className="mt-20 md:mt-20"></div>
-      </div>
+      </Link>
     </Container>
   );
 };

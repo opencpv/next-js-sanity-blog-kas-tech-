@@ -23,8 +23,6 @@ export default function Home({ posts }: Props) {
       <main>
         <TrendingPosts data={posts} />
         <BlogGrid data={posts} />
-        <NewsLetterSub />
-        <Footer />
       </main>
     </>
   );
