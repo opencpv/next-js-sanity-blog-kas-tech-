@@ -80,5 +80,5 @@
   }
 
   .blog p{
-    @apply mb-3
+    @apply mb-3 text-sm
   }

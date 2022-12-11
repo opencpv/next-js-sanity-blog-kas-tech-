@@ -14,7 +14,7 @@ const AuthorDetails = ({img,authorName,date}:Prop) => {
               sizeStyle={"w-[40px] h-[40px] md:w-[60px] md:h-[60px]"}
               roundedStyle={"rounded-md"}
             />
-        <p className=" text-[18px] text-[#888] mt-2">{authorName}</p>
+        <p className=" text-sm md:text-[18px] text-[#888] mt-2">{authorName}</p>
         <p className="text-[14px] text-[#888]">{date}</p>
 
     </FlexLayout> );

@@ -54,7 +54,7 @@ const Post = ({ post }: any) => {
       <main>
         <Container>
           {post && (
-            <article className="pb-10 my-20 border-b-2  w-[800px] mx-auto">
+            <article className="pb-10 my-20 border-b-2  w-full md:w-[800px] mx-auto">
               <AuthorDetails
                 img="/avatar.png"
                 authorName={"Kasuadana Sulemana Adams"}
@@ -67,7 +67,7 @@ const Post = ({ post }: any) => {
                 <CustomImage
                   img={urlFor(post.mainImage).url()!}
                   alt={post.title}
-                  sizeStyle={"w-[40px] h-[40px] md:w-[800px] md:h-[512px] mb-5"}
+                  sizeStyle={"h-[300px] w-full   md:w-[800px]  md:h-[512px] mb-5"}
                   roundedStyle={"rounded-md"}
                 />
               </div>
