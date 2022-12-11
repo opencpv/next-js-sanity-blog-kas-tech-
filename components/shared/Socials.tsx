@@ -10,7 +10,7 @@ import {
 import Link from "next/link";
 
 interface Prop {
-  isPrimary: boolean;
+  isPrimary?: boolean;
 }
 
 const Socials = ({ isPrimary = true }: Prop) => {
