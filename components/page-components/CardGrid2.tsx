@@ -6,7 +6,7 @@ interface Prop {
 const CardGrid2 = ({data}:Prop) => {
     return ( <div className="flex flex-col">
         {data.map((post,index)=>{
-            return ()
+            return (<></>)
         })}
     </div> );
 }
